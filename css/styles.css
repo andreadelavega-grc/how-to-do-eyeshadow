@@ -1,0 +1,160 @@
+/*css styles*/
+body{
+    margin: 1em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(255, 229, 229);
+}
+
+nav ul li {
+    list-style-type: none;
+    display:inline-block;
+    width:30%;
+    text-align: center;
+    background-color: rgb(250, 166, 219);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+div{
+    display:none;
+    margin-left: 2.5em;
+}
+
+.current{
+    display:block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li.current {
+    display: inline-block;
+    padding: 8px;
+    background-color: rgb(255, 100, 200);
+}
+
+div {
+    display: none;
+    margin: 1em 1em 1em 2em;
+    /* padding: 1em;
+    align-items: center;
+    width: 80%;
+    max-width: 800px; */
+}
+
+
+form {
+    background-color: white;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid rgb(250, 166, 219);
+}
+
+form h3 {
+    margin: 0.5em 0;
+}
+
+form h2 {
+    margin: 0em 0em 1em;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 60%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    border: 1px solid rgb(250, 166, 219);
+}
+
+form input[type="button"] {
+    background-color: rgb(250, 166, 219);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="button"]:hover {
+    background-color: rgb(255, 100, 200);
+}
+
+/*tab 2 */
+ol li{
+    margin-bottom: .75em;
+    padding: .5em;
+}
+
+/*tab 3*/
+
+.game, #sparklesButton{
+    display: block;
+    align-items: center;
+    border-style: solid;
+    background-color: white;
+    border-color: rgb(250, 166, 219);
+    border-radius: 5px;
+}
+
+
+
+.gameButtons, #sparklesButton{
+    display:inline-block;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+#sparklesButton{
+    margin-left: 2.5em;
+}
+#sparklesButton:hover{
+    background-color: rgb(255, 100, 200);
+}
+
+
+#eyeshadowContainer{
+    /* position:relative; */
+    position:fixed;
+    height: auto;
+    border-style: solid;
+    background-color: white;
+    border-color: rgb(250, 166, 219);
+    border-radius: 5px;
+}
+#eyeshadowContainer img{
+    visibility: hidden; 
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#eyeshadowContainer img.show{
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+}
+
+#eyeshadowContainer #eye-image{
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
+}
+
+#sparkles{
+    display: none; 
+}
+
+#sparkles.show {
+    display: block;
+    z-index: 3;
+}
+
+/*ahlgjhsdklfjghsdjkfgnsdjkfgnbsdkjfghsdkjfghsdkjfgh*/
+
+
+
