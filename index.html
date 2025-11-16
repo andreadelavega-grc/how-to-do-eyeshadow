@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>How to do eyeshadow</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li data-tab="tab1" class="current"><a href="#">Home</a></li>
+            <li data-tab="tab2"><a href="#">Instructions</a></li>
+            <li data-tab="tab3"><a href="#">Game</a></li>
+        </ul>
+    </nav>
+
+    <!---div for tab 1 content-->
+    <div id="tab1" class="current">
+        <h1> How to do eyeshadow! </h1>
+        <p> Adding eyeshadow to your makeup routine can be a blast, and the key to making it a fun experience is embracing your creativity! Whether you're going for a chic daytime look or a bold evening vibe, don’t be afraid to play around with colors and textures. The right eyeshadow palette can transform your look from basic to fabulous in no time. So, pick a palette that speaks to your inner diva—think vibrant hues, shimmering metallics, or classic neutrals that suit your mood and style. Remember, makeup is all about self-expression, so go with shades and styles that make you feel confident and fabulous! </p>
+        <p> When it comes to eyeshadow, the best advice is to trust your instincts. Choose colors that you love and that enhance your unique features. Maybe you're into those trendy smoky eyes or prefer a soft, dreamy pastel? It’s all about finding what makes you feel amazing and having fun while experimenting with different looks. The magic of eyeshadow lies in its versatility, so don’t be shy—blend, layer, and let your imagination run wild. After all, the ultimate goal is to have a blast while creating eye-catching styles that showcase your personal flair!</p>
+        <!---newsletter form-->
+        <form id="form1">
+            <h2> Sign up for our newsletter! </h2>
+            <h3>First Name</h3>
+            <input type="text" id="firstName" required>
+    
+            <h3>Last Name</h3>
+            <input type="text" id="lastName" required>
+            
+            <h3>Email</h3>
+             <input type="email" id="userEmail" required>
+            
+            <input type="button" value="Sign Up" id="signupButton">
+
+            <p id="output"></p>
+
+            
+        </form>
+       
+    </div>
+
+    <!---div tab 2-->
+    <div id="tab2">
+        <h2> Step-by-step blue eyeshadow! </h2>
+        <ol>
+            <li> Prep Your Lids: Start by applying an eyeshadow primer to your eyelids. This step is especially important when working with bright colors to ensure that your eyeshadow stays put and pops with vibrant color. </li>
+            <li> Base Color: Using a fluffy eyeshadow brush, apply a light blue eyeshadow across your entire eyelid as a base. Make sure to blend it evenly up to your brow bone.</li>
+            <li> Deepen the Crease: Next, take a medium blue shade and apply it to your crease using a blending brush. Sweep the color back and forth to create blend well.</li>
+            <li> Add Sparkle: For a touch of sparkle, use a small brush to apply a shimmering blue eyeshadow or glitter over the center of your eyelid. Gently pat it in place to ensure the glitter sticks and doesn’t fall out.</li>
+            <li> Highlight the Inner Corners: Brighten up your eyes by applying a light, shimmery eyeshadow or highlighter to the inner corners of your eyes. This will make your eyes appear more awake and add a pop of sparkle.</li>
+        </ol>
+        <p> Clean up any fallout and... Voila! You have mastered this look! 
+    </div>
+
+    <!-- div tab 3 -->
+    <div id="tab3">
+        <h2> Practice here! </h2>
+        <!--div for game buttons-->
+        <div class="game">
+                <!---eyelid color buttons-->
+                <form id="lidButtons">
+                <label class="gameButtons"><input type="radio" name="lidButtons" value="blue-lid">Blue eyelid</label>
+                <label class="gameButtons"><input type="radio" name="lidButtons" value="pink-lid">Pink eyelid</label>
+                <label class="gameButtons"><input type="radio" name="lidButtons" value="brown-lid">Brown eyelid</label>
+                </form>
+                <!--crease color buttons-->
+                <form id="creaseButtons">
+                <label class="gameButtons"><input type="radio" name="creaseButtons" value="blue-crease">Blue crease</label>
+                <label class="gameButtons"><input type="radio" name="creaseButtons" value="pink-crease">Pink crease</label>
+                <label class="gameButtons"><input type="radio" name="creaseButtons" value="brown-crease">Brown crease</label>
+                </form>
+                <!---sparkle button-->
+            </div>
+                <input type="button" value="Add Sparkles" id="sparklesButton">
+                
+            <!--div for the images-->
+            <div class="game" id="eyeshadowContainer">
+
+                <!---permanent eye image-->
+                <img id="eye-image" src="images/eye-image.png" alt="Eye"/>
+
+                <!---eyelid color images-->
+                <img id="blue-lid" src="images/blue-lid.png" alt="Blue Lid"/>
+                <img id="pink-lid" src="images/pink-lid.png" alt="Pink Lid"/>
+                <img id="brown-lid" src="images/brown-lid.png" alt="Brown Lid"/>
+
+              <!----crease color images-->
+                <img id="blue-crease" src="images/blue-crease.png" alt="Blue Crease"/>
+                <img id="pink-crease" src="images/pink-crease.png" alt="Pink Crease"/>
+                <img id="brown-crease" src="images/brown-crease.png" alt="Brown Crease"/>
+
+              <!---sparkle image-->
+                <img id="sparkles-image" src="images/sparkles.png" alt="Sparkles"/>
+            </div>
+
+    </div>
+    
+   
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</html>
